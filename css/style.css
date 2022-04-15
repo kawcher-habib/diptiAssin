@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container > nav {
+  background-color: aqua;
+  border-radius: 3px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.container > nav > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  width: 100%;
+  position: relative;
+}
+
+.container > nav > ul > li {
+  -webkit-transition: 1s;
+  transition: 1s;
+  padding: 10px;
+  border-radius: 5px;
+  line-height: 2rem;
+}
+
+.container > nav > ul > li > a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bolder;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.container > nav > ul > li:hover {
+  background-color: blueviolet;
+}
+
+.container > nav > ul > li:hover > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container > nav > ul > li:hover > a {
+  color: white;
+}
+
+.container > nav > ul > li > div {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: aqua;
+  width: 800px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.container > nav > ul > li > div > ul {
+  width: 100%;
+  list-style: none;
+  padding: 10px;
+}
+
+.container > nav > ul > li > div > ul > li {
+  line-height: 2rem;
+}
+
+.container > nav > ul > li > div > ul > li > a {
+  text-decoration: none;
+}
+
+.container > nav > ul > li > div > ul > li > a:hover {
+  background-color: blueviolet;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=style.css.map */
