@@ -3,68 +3,179 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: #1d2e41;
+    font-family: "Roboto", sans-serif;
+    // font-family: 'Ubuntu', sans-serif;
+}
 .container {
-    > nav {
-        background-color: aqua;
-        border-radius: 3px;
-        width: 800px;
-        margin: 0 auto;
-        > ul {
+    width: 950px;
+    margin: 0 auto;
+    background-color: #ffff;
+    .sectionTitle {
+        padding: 10px;
+        background-color: #f4f4f4;
+        color: #394b58;
+        box-shadow: 1px -1px 3px grey;
+    }
+    > .topHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #283b46;
+        color: #9ca5ac;
+        line-height: 2rem;
+        padding: 10px;
+        a {
+            color: #9ca5ac;
+        }
+        > div > span {
+            margin-right: 10px;
+        }
+    }
+    > .navBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #394b58;
+        padding: 10px;
+        color: #9ca5ac;
+        height: 80px;
+        .logo {
+        }
+    }
+    > .banner {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #dcdcdc;
+        height: 60vh;
+        padding: 10px;
+        .content {
+            width: 40%;
+            h1 {
+                font-size: 3rem;
+                color: #286c9e;
+            }
+            p {
+                font-size: 15px;
+                color: #9ca5ac;
+                line-height: 25px;
+            }
+            button {
+                width: 50%;
+                padding: 15px;
+                margin-top: 10px;
+                background-color: #364753;
+                border-radius: 5px;
+                color: #fff;
+            }
+        }
+    }
+    > .featureProduct {
+        > .futProducts {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            list-style: none;
+            padding: 5% 10px;
             width: 100%;
-            position: relative;
+            .card {
+                width: 30%;
+                padding: 5px;
+                box-shadow: 1px -1px 3px grey;
+                img {
+                    width: 100%;
+                    border: solid 1px #9ca5ac;
+                }
+            }
+            > .content {
+                margin-left: 10px;
+                width: 65%;
 
-            > li {
-                transition: 1s;
-                padding: 10px;
-                border-radius: 5px;
-                line-height: 2rem;
-                > a {
-                    text-decoration: none;
-                    font-size: 20px;
-                    font-weight: bolder;
-                    transition: 2s;
-                }
-                &:hover {
-                    background-color: blueviolet;
-                    > div {
-                        display: flex;
-                    }
-                    > a {
-                        color: white;
+                p {
+                    margin: 10px 0;
+                    a {
+                        color: #286c9e;
                     }
                 }
-                > div {
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    display: none;
-                    justify-content: space-between;
-                    align-items: center;
-                    background-color: aqua;
-                    width: 800px;
-                    transition: 2s;
-                    > ul {
+            }
+        }
+    }
+    > .latestProduct {
+        > .latProducts {
+            margin: 50px 10px 15px 10px;
+            padding: 3% 2% 3% 2%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            border-radius: 2px;
+            box-shadow: 1px -1px 3px grey;
+
+            .card {
+                padding: 5px;
+                box-shadow: 1px 0px 0px grey;
+                width: 100%;
+                > .cardImg {
+                    width: 50%;
+                    img {
                         width: 100%;
-                        list-style: none;
-                        padding: 10px;
-                        > li {
-                            line-height: 2rem;
-                            > a {
-                                text-decoration: none;
-                                &:hover {
-                                    background-color: blueviolet;
-                                    color: white;
-                                    padding: 10px;
-                                    border-radius: 5px;
-                                }
-                            }
-                        }
                     }
                 }
+                .description {
+                    line-height: 20px;
+                    color: #9ca5ac;
+                }
+            }
+        }
+    }
+    > .reviewSectin {
+        > .reviews {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            align-items: center;
+            padding: 5% 2%;
+            .productImg {
+                width: 50%;
+                box-shadow: 1px -1px 3px grey;
+                padding: 5px;
+                img {
+                    width: 100%;
+                }
+            }
+            > .reviewContent {
+                p {
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+    > .ourClient {
+        .clientLogo {
+            padding: 4% 2%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    > .footer {
+        padding: 5% 2%;
+        background-color: #394b58;
+        color: #9ca5ac;
+        display: flex;
+        gap: 15%;
+        justify-content: space-evenly;
+        align-items: center;
+        > .footerLogo {
+            line-height: 20px;
+        }
+
+        > .socialIcon {
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
             }
         }
     }
