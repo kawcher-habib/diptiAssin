@@ -287,9 +287,9 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1240px) {
   .container {
-    width: 1440px;
+    width: 1240px;
     margin: auto;
     padding: 0 15px;
     font-family: Poppins;
@@ -564,7 +564,7 @@
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 1440px;
+    width: 1240px;
     margin: auto;
     padding: 0 15px;
     font-family: Poppins;
