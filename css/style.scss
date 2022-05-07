@@ -254,12 +254,13 @@ $googleFont: Poppins;
     }
 }
 
-@media screen and(min-width: 768px) {
+@media screen and(min-width: 1440px ) {
     .container {
-        width: 768px;
+        width: 1440px;
         margin: auto;
         padding: 0 15px;
         font-family: $googleFont;
+        color: $fontColor;
         .nav-bar {
             display: flex;
             justify-content: space-between;
@@ -289,11 +290,10 @@ $googleFont: Poppins;
                     }
                 }
             }
-        } //nav-bar
+        } // nav-bar
 
         > .banner-area {
             display: flex;
-            // flex-direction: column-reverse;
             justify-content: space-between;
             align-items: center;
 
@@ -498,14 +498,12 @@ $googleFont: Poppins;
         }
     }
 }
-
-@media screen and(min-width: 1440px ) {
+@media screen and(min-width: 768px) {
     .container {
-        width: 1440px;
+        width: 768px;
         margin: auto;
         padding: 0 15px;
         font-family: $googleFont;
-        color: $fontColor;
         .nav-bar {
             display: flex;
             justify-content: space-between;
@@ -535,10 +533,11 @@ $googleFont: Poppins;
                     }
                 }
             }
-        } // nav-bar
+        } //nav-bar
 
         > .banner-area {
             display: flex;
+            // flex-direction: column-reverse;
             justify-content: space-between;
             align-items: center;
 

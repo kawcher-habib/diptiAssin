@@ -287,12 +287,13 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .container {
-    width: 768px;
+    width: 1440px;
     margin: auto;
     padding: 0 15px;
     font-family: Poppins;
+    color: #3a3a3a;
   }
   .container .nav-bar {
     display: -webkit-box;
@@ -561,13 +562,12 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) {
   .container {
-    width: 1440px;
+    width: 768px;
     margin: auto;
     padding: 0 15px;
     font-family: Poppins;
-    color: #3a3a3a;
   }
   .container .nav-bar {
     display: -webkit-box;
